@@ -1,0 +1,18 @@
+[project]
+name = "upstream-flow"
+version = "1.0.0"
+description = "WIS2.0 upstream flow that run on prefect Data Platform to preprocess WIS2 data. "
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "minio>=7.2.16",
+    "pandas>=2.3.2",
+    "pre-commit>=4.3.0",
+    "prefect==3.3.3",
+    "xarray>=2025.8.0",
+]
+
+[dependency-groups]
+dev = [
+    "pytest>=8.4.1",
+]
