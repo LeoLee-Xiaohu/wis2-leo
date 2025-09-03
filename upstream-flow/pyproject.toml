@@ -1,5 +1,5 @@
 [project]
-name = "upstream-flow"
+name = "wis2-aodn-upstream-flow"
 version = "1.0.0"
 description = "WIS2.0 upstream flow that run on prefect Data Platform to preprocess WIS2 data. "
 readme = "README.md"

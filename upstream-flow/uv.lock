@@ -2034,35 +2034,6 @@ wheels = [
 ]
 
 [[package]]
-name = "upstream-flow"
-version = "1.0.0"
-source = { virtual = "." }
-dependencies = [
-    { name = "minio" },
-    { name = "pandas" },
-    { name = "pre-commit" },
-    { name = "prefect" },
-    { name = "xarray" },
-]
-
-[package.dev-dependencies]
-dev = [
-    { name = "pytest" },
-]
-
-[package.metadata]
-requires-dist = [
-    { name = "minio", specifier = ">=7.2.16" },
-    { name = "pandas", specifier = ">=2.3.2" },
-    { name = "pre-commit", specifier = ">=4.3.0" },
-    { name = "prefect", specifier = "==3.3.3" },
-    { name = "xarray", specifier = ">=2025.8.0" },
-]
-
-[package.metadata.requires-dev]
-dev = [{ name = "pytest", specifier = ">=8.4.1" }]
-
-[[package]]
 name = "urllib3"
 version = "2.5.0"
 source = { registry = "https://pypi.org/simple" }
@@ -2218,6 +2189,35 @@ wheels = [
     { url = "https://files.pythonhosted.org/packages/d6/c9/91f71eff32540e5991820b4eddb0fe3886c45a47432ac4ac00ca75ad6723/whenever-0.7.3-cp313-cp313-win32.whl", hash = "sha256:2991d491badcdd9da357d156f9e17426f2feda7da9f186dabea6d759f8920225", size = 295029, upload-time = "2025-03-19T14:41:09.146Z" },
     { url = "https://files.pythonhosted.org/packages/74/46/e3b3f9ccd27958652fea2d94442a1f1e82deaf0721bb4afa72b3d0fee476/whenever-0.7.3-cp313-cp313-win_amd64.whl", hash = "sha256:1a340f71c0b8a059ecf34948f2c59b8995abd84b2b69fff576a3818162fb3056", size = 280568, upload-time = "2025-03-19T14:41:15.979Z" },
 ]
+
+[[package]]
+name = "wis2-aodn-upstream-flow"
+version = "1.0.0"
+source = { virtual = "." }
+dependencies = [
+    { name = "minio" },
+    { name = "pandas" },
+    { name = "pre-commit" },
+    { name = "prefect" },
+    { name = "xarray" },
+]
+
+[package.dev-dependencies]
+dev = [
+    { name = "pytest" },
+]
+
+[package.metadata]
+requires-dist = [
+    { name = "minio", specifier = ">=7.2.16" },
+    { name = "pandas", specifier = ">=2.3.2" },
+    { name = "pre-commit", specifier = ">=4.3.0" },
+    { name = "prefect", specifier = "==3.3.3" },
+    { name = "xarray", specifier = ">=2025.8.0" },
+]
+
+[package.metadata.requires-dev]
+dev = [{ name = "pytest", specifier = ">=8.4.1" }]
 
 [[package]]
 name = "xarray"
