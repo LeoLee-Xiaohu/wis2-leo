@@ -2,6 +2,7 @@ Metadata-Version: 2.4
 Name: upstream-flow
 Version: 1.0.0
 Summary: WIS2.0 upstream flow that run on prefect Data Platform to preprocess WIS2 data. 
+Classifier: Private :: Do Not Upload
 Requires-Python: >=3.11
 Description-Content-Type: text/markdown
 Requires-Dist: minio>=7.2.16
