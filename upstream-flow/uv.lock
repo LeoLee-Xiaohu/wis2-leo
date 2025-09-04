@@ -2191,9 +2191,9 @@ wheels = [
 ]
 
 [[package]]
-name = "wis2-aodn-upstream-flow"
+name = "wis2-aodn-upstream"
 version = "1.0.0"
-source = { virtual = "." }
+source = { editable = "." }
 dependencies = [
     { name = "minio" },
     { name = "pandas" },

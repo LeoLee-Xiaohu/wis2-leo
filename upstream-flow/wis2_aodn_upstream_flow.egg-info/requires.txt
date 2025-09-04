@@ -1,5 +1,0 @@
-minio>=7.2.16
-pandas>=2.3.2
-pre-commit>=4.3.0
-prefect==3.3.3
-xarray>=2025.8.0

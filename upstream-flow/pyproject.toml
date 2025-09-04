@@ -1,5 +1,5 @@
 [project]
-name = "wis2-aodn-upstream-flow"
+name = "wis2-aodn-upstream"
 version = "1.0.0"
 description = "WIS2.0 upstream flow that run on prefect Data Platform to preprocess WIS2 data. "
 readme = "README.md"
@@ -16,3 +16,7 @@ dependencies = [
 dev = [
     "pytest>=8.4.1",
 ]
+
+[build-system]
+requires = ["uv_build >= 0.7.19, <0.9.0"]
+build-backend = "uv_build"
