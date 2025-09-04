@@ -1,0 +1,4 @@
+wis2-aodn-upstream @ https://github.com/LeoLee-Xiaohu/wis2-leo/releases/download/v1.0.0/wis2_aodn_upstream-1.0.0-py3-none-any.whl
+    # via dataflow-orchestration (pyproject.toml)
+# aodn-cloud-optimised @ https://github.com/aodn/aodn_cloud_optimised/releases/download/v0.1.51/aodn_cloud_optimised-0.1.51+unfrozen-py3-none-any.whl
+#     # via dataflow-orchestration (pyproject.toml)
