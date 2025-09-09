@@ -1,0 +1,30 @@
+[project]
+name = "wis2-aodn-upstream"
+version = "1.0.0"
+description = "WIS2.0 upstream flow that run on prefect Data Platform to preprocess WIS2 data. "
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "minio>=7.2.16",
+    "netcdf4>=1.7.2",
+    "pandas>=2.2.0",
+    "pre-commit>=4.3.0",
+    "prefect>=3.3.3",
+    "prefect-aws>=0.5.16",
+    "python-magic>=0.4.27",
+    "xarray>=2024.5.0",
+]
+
+[dependency-groups]
+dev = [
+    "pytest>=8.4.1",
+]
+
+[build-system]
+requires = ["uv_build >= 0.7.19, <0.9.0"]
+build-backend = "uv_build"
+
+[tool.pytest.ini_options]
+pythonpath = [
+  "src"
+]
