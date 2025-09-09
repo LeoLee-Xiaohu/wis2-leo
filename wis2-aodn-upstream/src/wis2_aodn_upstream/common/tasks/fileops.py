@@ -4,7 +4,7 @@ import botocore
 from prefect import task, get_run_logger
 from prefect_aws.s3 import S3Bucket
 
-from common.lib.util import validate_absolute_path, mkdir_p
+from ..lib.util import validate_absolute_path, mkdir_p
 
 
 def s3_url(bucket: S3Bucket, key: str = '') -> str:

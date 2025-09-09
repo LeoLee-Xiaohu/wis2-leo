@@ -95,7 +95,7 @@ You can run the flow locally for testing or manual processing.
 2. Upload a sample netcdf to s3 manually. This will trigger the router and wis2 prefect flow.
 
 ```bash
-uv run src/wis2_aodn_upstream/wis2_buoys_flow.py --path IMOS/COASTAL-WAVE-BUOYS/WAVE-BUOYS/REALTIME/WAVE-PARAMETERS/APOLLO-BAY/2025/IMOS_COASTAL-WAVE-BUOYS_20250801_APOLLO-BAY_RT_WAVE-PARAMETERS_monthly.nc --dataset-config config/APOLLO_BAY
+uv run -m wis2_aodn_upstream.wis2_buoys_flow --path IMOS/COASTAL-WAVE-BUOYS/WAVE-BUOYS/REALTIME/WAVE-PARAMETERS/APOLLO-BAY/2025/IMOS_COASTAL-WAVE-BUOYS_20250801_APOLLO-BAY_RT_WAVE-PARAMETERS_monthly.nc --dataset-config config/APOLLO_BAY
 ```
 
 ### 2. Automated Execution via S3 Events

@@ -14,9 +14,9 @@ from tempfile import TemporaryDirectory
 from prefect import flow, get_run_logger
 from prefect_aws import S3Bucket
 
-from common.lib.config import lazy_load_config
-from common.tasks.fileops import download_file
-from wis2_aodn_upstream.etl import load_to_minio, convert_buoy_nc_to_csv
+from .common.lib.config import lazy_load_config
+from .common.tasks.fileops import download_file
+from .etl import load_to_minio, convert_buoy_nc_to_csv
 
 
 @flow(flow_run_name="WIS2-buoys-{dataset_config}")
