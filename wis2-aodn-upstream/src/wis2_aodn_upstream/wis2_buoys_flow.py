@@ -64,7 +64,7 @@ def wis2_buoys_upstream_flow(
         load_to_minio(csv_path, minio_path)
 
 
-if __name__ == "__main__":
+def main():
     parser = argparse.ArgumentParser(
         description="Process S3 paths and wis2 datasets.",
         formatter_class=argparse.RawTextHelpFormatter,
@@ -84,3 +84,7 @@ if __name__ == "__main__":
     args = parser.parse_args()
 
     wis2_buoys_upstream_flow(path=args.path, dataset_config=args.dataset_config)
+
+
+if __name__ == "__main__":
+    main()

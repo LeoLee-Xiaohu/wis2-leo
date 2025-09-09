@@ -15,6 +15,9 @@ dependencies = [
     "xarray>=2024.5.0",
 ]
 
+[project.scripts]
+run-wis2-buoys = "wis2_aodn_upstream.wis2_buoys_flow:main"
+
 [dependency-groups]
 dev = [
     "pytest>=8.4.1",
