@@ -10,7 +10,7 @@ dependencies = [
     "pandas>=2.2.0",
     "pre-commit>=4.3.0",
     "prefect>=3.3.3",
-    "prefect-aws>=0.5.16",
+    "prefect-aws==0.5.13",
     "python-magic>=0.4.27",
     "xarray>=2024.5.0",
 ]
