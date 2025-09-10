@@ -96,6 +96,8 @@ You can run the flow locally for testing or manual processing.
 
 ```bash
 run-wis2-buoys --path IMOS/COASTAL-WAVE-BUOYS/WAVE-BUOYS/REALTIME/WAVE-PARAMETERS/APOLLO-BAY/2025/IMOS_COASTAL-WAVE-BUOYS_20250801_APOLLO-BAY_RT_WAVE-PARAMETERS_monthly.nc --dataset-config config/APOLLO_BAY
+
+run-wis2-buoys --path IMOS/COASTAL-WAVE-BUOYS/WAVE-BUOYS/REALTIME/WAVE-PARAMETERS/STORM-BAY/2025/IMOS_COASTAL-WAVE-BUOYS_20250901_STORM-BAY_RT_WAVE-PARAMETERS_monthly.nc --dataset-config config/STORM_BAY
 ```
 
 ### 2. Automated Execution via S3 Events
