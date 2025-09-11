@@ -14,7 +14,7 @@ from tempfile import TemporaryDirectory
 from prefect import flow, get_run_logger
 from prefect_aws import S3Bucket
 
-from .common.lib.config import lazy_load_config
+from .config import load_config
 from .common.tasks.fileops import download_file
 from .etl import load_to_minio, convert_buoy_nc_to_csv
 
@@ -38,7 +38,7 @@ def wis2_buoys_upstream_flow(
     logger = get_run_logger()
     logger.info(f"Processing file: {path}")
 
-    config = lazy_load_config(dataset_config)
+    config = load_config(f"{os.path.basename(dataset_config)}.yaml")
     logger.info(f"Loaded config_id: {config['config_id']}")
     logger.debug(f"Config:\n{config}")
 
@@ -79,7 +79,7 @@ def main():
         "--dataset-config",
         required=True,
         type=str,
-        help="Name of the dataset configuration. Example: 'config/APOLLO_BAY'",
+        help="Name of the dataset configuration. Example: 'APOLLO-BAY'",
     )
     args = parser.parse_args()
 

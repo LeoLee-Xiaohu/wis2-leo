@@ -13,6 +13,7 @@ dependencies = [
     "prefect-aws==0.5.13",
     "python-magic>=0.4.27",
     "xarray>=2024.5.0",
+    "pyyaml>=6.0.1",
 ]
 
 [project.scripts]

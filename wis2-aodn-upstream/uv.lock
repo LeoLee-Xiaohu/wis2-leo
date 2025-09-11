@@ -2313,6 +2313,7 @@ dependencies = [
     { name = "prefect" },
     { name = "prefect-aws" },
     { name = "python-magic" },
+    { name = "pyyaml" },
     { name = "xarray" },
 ]
 
@@ -2330,6 +2331,7 @@ requires-dist = [
     { name = "prefect", specifier = ">=3.3.3" },
     { name = "prefect-aws", specifier = "==0.5.13" },
     { name = "python-magic", specifier = ">=0.4.27" },
+    { name = "pyyaml", specifier = ">=6.0.1" },
     { name = "xarray", specifier = ">=2024.5.0" },
 ]
 
